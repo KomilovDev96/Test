@@ -1,0 +1,14 @@
+.button {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  background: #066f14;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  transition: 500ms;
+  &:hover {
+    background: #07951d;
+  }
+}

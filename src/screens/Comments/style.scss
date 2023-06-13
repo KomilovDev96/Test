@@ -1,0 +1,138 @@
+.commnets {
+  padding: 50px 0;
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+  }
+  &__say {
+    width: 500px;
+    h2 {
+      font-family: "Nunito";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 50px;
+      color: #1a1a1a;
+      margin-bottom: 12px;
+    }
+    p {
+      font-family: "DM Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 160%;
+      color: #4a4a4a;
+      margin-bottom: 43px;
+    }
+  }
+  &__image {
+    width: 600px;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  &__subscr {
+    padding: 70px 50px;
+    background: #dfffe3;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__titleSub {
+    width: 500px;
+    h2 {
+      font-family: "Nunito";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 50px;
+      color: #1a1a1a;
+    }
+    p {
+      font-family: "DM Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 160%;
+      color: #4a4a4a;
+      margin-top: 15px;
+    }
+  }
+  &__inpt {
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    align-items: stretch;
+    margin-top: 30px;
+    input {
+      padding: 10px 20px;
+      border: none;
+      outline: none;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  &__imagSub {
+    position: relative;
+    width: 262px;
+    img {
+      max-width: 100%;
+      height: auto;
+      position: absolute;
+      top: -116px;
+      left: 0;
+      z-index: 55;
+    }
+  }
+  &__people {
+    width: 500px;
+    background: #066f14;
+    padding: 20px 40px;
+  }
+  &__text {
+    margin-top: 16px;
+    p {
+      font-family: "DM Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 160%;
+      color: #ececec;
+    }
+  }
+  &__avatar {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__avaIma {
+    display: flex;
+    align-items: center;
+  }
+  &__ava {
+    margin-right: 10px;
+  }
+  &__info {
+    h4 {
+      font-family: "Nunito";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 25px;
+      color: #ffffff;
+      margin-bottom: 6px;
+    }
+    h5 {
+      font-family: "DM Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+      color: #d9d9d9;
+    }
+  }
+}

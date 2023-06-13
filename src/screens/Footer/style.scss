@@ -1,0 +1,139 @@
+.footer {
+  padding: 70px 0;
+  &__title {
+    text-align: center;
+    max-width: 550px;
+    margin: auto;
+    h2 {
+      font-family: "Nunito";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 57px;
+      color: #1a1a1a;
+      margin-bottom: 12px;
+    }
+    p {
+      font-family: "DM Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 160%;
+      text-align: center;
+      color: #4a4a4a;
+    }
+  }
+  &__absol {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 500ms;
+  }
+  &__itemsCol {
+    margin-top: 40px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    li {
+      position: relative;
+      &:hover .footer__absol {
+        opacity: 1;
+        cursor: pointer;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__left {
+    max-width: 306px;
+    h4 {
+      font-family: "DM Sans";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 31px;
+      color: #1a1a1a;
+      margin-bottom: 24px;
+    }
+    p {
+      font-family: "DM Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 160%;
+      color: #5a5a5a;
+      margin-bottom: 22px;
+    }
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      li {
+        background: #edffdd;
+        border-radius: 4px;
+        width: 48px;
+        height: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 16px;
+        cursor: pointer;
+      }
+    }
+  }
+  &__right {
+    width: 645px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__menuTitle {
+    h3 {
+      font-family: "DM Sans";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 31px;
+      color: #1a1a1a;
+      margin-bottom: 24px;
+    }
+    ul {
+      list-style: none;
+      li {
+        margin-bottom: 12px;
+        font-family: "DM Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+        color: #5a5a5a;
+        cursor: pointer;
+        transition: 500ms;
+        &::after{
+            content: "";
+            display: inline-block;
+            width: 0%;
+            height: 2px;
+            background: #066f14;
+        }
+        &:hover {
+          color: #066f14;
+        }
+      }
+    }
+  }
+}
