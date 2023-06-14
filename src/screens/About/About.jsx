@@ -54,11 +54,12 @@ export const About = () => {
               </MouseParallaxContainer>
             </div>
           </Motion>
-          <Motion
-            variants={plasticOption}
-            transition={plasticOption.transition}
-          >
-            <div className="us__title">
+
+          <div className="us__title">
+            <Motion
+              variants={plasticOption}
+              transition={plasticOption.transition}
+            >
               <h5>About Us</h5>
               <h2>Continue to Develop to Became Global Company</h2>
               <p>
@@ -73,9 +74,10 @@ export const About = () => {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu,
                 tempor, accumsan sit amet nunc cursus.{" "}
               </p>
-              <Button>Read More</Button>
-            </div>
-          </Motion>
+            </Motion>
+
+            <Button>Read More</Button>
+          </div>
         </div>
       </Container>
     </div>
