@@ -46,10 +46,7 @@ export const Header = () => {
               </div>
             </div>
 
-            <Motion
-              variants={monitorOption}
-              transition={monitorOption.transition}
-            >
+            
               <ul className="header__counts counts">
                 {countData.map((item) => (
                   <li className="counts__item" key={item.id}>
@@ -58,7 +55,6 @@ export const Header = () => {
                   </li>
                 ))}
               </ul>
-            </Motion>
           </div>
           <div className="header__images">
             <div className="header__buttonAbs buttonAbs">
