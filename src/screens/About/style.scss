@@ -36,6 +36,9 @@
     justify-content: space-between;
     flex-wrap: wrap;
     list-style: none;
+    @media (max-width: 510px) {
+      width: 100% !important;
+    }
     li {
       width: 215px;
       background: #f6ede8;
