@@ -6,6 +6,12 @@ import {
   MouseParallaxContainer,
 } from "react-parallax-mouse";
 import { useParallax } from "react-scroll-parallax";
+import {
+  leftOption,
+  btnOption,
+  monitorOption,
+} from "@/components/framer/header";
+import Motion from "@/components/elements/Motion";
 import "./style.scss";
 export const Header = () => {
   const parallax = useParallax({
@@ -16,14 +22,21 @@ export const Header = () => {
       <Container>
         <RowGrid justify="space-between">
           <div className="header__text">
-            <h1 className="header__title">Growing Beautiful Plants at Home</h1>
-            <p className="header__parag">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu,
-              tempor, accumsan sit amet nunc cursus. Nec tristique at in erat
-              lectus mas sa diam. Lectus elit, nulla elementum fringilla at.
-            </p>
+            <Motion variants={leftOption} transition={leftOption.transition}>
+              <h1 className="header__title">
+                Growing Beautiful Plants at Home
+              </h1>
+              <p className="header__parag">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu,
+                tempor, accumsan sit amet nunc cursus. Nec tristique at in erat
+                lectus mas sa diam. Lectus elit, nulla elementum fringilla at.
+              </p>
+            </Motion>
+
             <div className="header__paralax paralax">
-              <Button>Learn More</Button>
+              <Motion variants={btnOption} transition={btnOption.transition}>
+                <Button>Learn More</Button>
+              </Motion>
               <div className="paralax__image">
                 <MouseParallaxContainer globalFactorX={0.1} globalFactorY={0.1}>
                   <MouseParallaxChild factorX={1} factorY={2}>
@@ -32,14 +45,20 @@ export const Header = () => {
                 </MouseParallaxContainer>
               </div>
             </div>
-            <ul className="header__counts counts">
-              {countData.map((item) => (
-                <li className="counts__item" key={item.id}>
-                  <span className="counts__count">{item.count}</span>
-                  <p className="counts__title">{item.text}</p>
-                </li>
-              ))}
-            </ul>
+
+            <Motion
+              variants={monitorOption}
+              transition={monitorOption.transition}
+            >
+              <ul className="header__counts counts">
+                {countData.map((item) => (
+                  <li className="counts__item" key={item.id}>
+                    <span className="counts__count">{item.count}</span>
+                    <p className="counts__title">{item.text}</p>
+                  </li>
+                ))}
+              </ul>
+            </Motion>
           </div>
           <div className="header__images">
             <div className="header__buttonAbs buttonAbs">
